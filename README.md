@@ -1,4 +1,4 @@
-# ToDoList-JS
+# ToDoList-JS 
 
 # Introdução
 
@@ -22,4 +22,4 @@ Ao adcionar uma tarefa o software lhé dará as seguintes opções:
 
 # APROVEITE ;) !!!
 
-- Link do software:
+- Link: https://eduardo-amaro-maciel.github.io/ToDoList-JS/index.html
