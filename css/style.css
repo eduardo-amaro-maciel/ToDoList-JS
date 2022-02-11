@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+:root {
+    --branco: #fff9f9;
+    --roxo-escuro: #a430d1;
+    --roxo-claro: #656ffa;
+    --azul-1: #0097ff;
+    --azul-2: #00b5ff;
+    --azul-3: #05cefb; 
+
+    --font-1: "Nanum Gothic", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--azul-1) var(--roxo-escuro);
+}
+  
+  /* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: var(--roxo-escuro);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: var(--azul-1);
+    border-radius: 10px;
+    border: 1px solid var(--azul-3);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, var(--roxo-escuro), var(--roxo-claro), var(--azul-1), var(--azul-2), var(--azul-3));
+}
+
+#container-input-to-do-list {
+    width: 700px;
+    height: 610px;
+    padding: 15px;
+    box-shadow: 0 1rem 2rem rgba(171, 30, 214, 0.397);
+    background-image: linear-gradient(to right bottom, #fc4e4e, #ff2f6b, #ff008e, #ff00b8, #eb25e4);
+    overflow-y: scroll;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+#input-text-adicionar-tarefas {
+    width: 300px;
+    border: var(--azul-2) 2px solid;
+    outline: none;
+    padding: 10px;
+    font-family: var(--font-1);
+}
+
+#input-text-adicionar-tarefas::placeholder {
+    font-family: var(--font-1);
+}
+
+#button-adiconar-tarefas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--azul-2) 2px solid;
+    background-color: var(--azul-2);
+}
+
+#button-adiconar-tarefas:hover {
+    background-color: var(--roxo-claro);
+    cursor: pointer;
+    border: 2px solid var(--roxo-claro);
+}
+
+img[src="./images/adicionar-botao.png"] {
+    height: 50px;
+    width: 50px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.tarefas-inclusas {
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--roxo-escuro);
+}
+
+input[type="checkbox"] {
+    height: 23px;
+    width: 23px;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:hover, img[src="./images/lixeira.png"]:hover, img[src="./images/lapis.png"]:hover {
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem rgba(171, 30, 214, 1.7);
+    border: 2px solid var(--roxo-claro);
+}
+
+label {
+    font-family: var(--font-1);
+    flex-grow: 1;
+}
+
+img[src="./images/lapis.png"], img[src="./images/lixeira.png"] {
+    height: 30px;
+    margin: 0 10px 0 7px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+img[src="./images/lapis.png"] {
+    background-color: var(--azul-3);
+}
+
+img[src="./images/lixeira.png"] {
+    background-color: #ff2f6b;
+}
